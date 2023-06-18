@@ -63,7 +63,7 @@ done
 # Fonction pour afficher l'état du réseau de la machine virtuelle
 afficher_etat_reseau(){
 	vnstat -m >> "$fichier_sortie"
-	nmap -A 10.0.2.15 >> "$fichier_sortie"	# Scan du réseau
+	nmap -A "ADRESSE IP" >> "$fichier_sortie"	# Scan du réseau
 }
 
 
